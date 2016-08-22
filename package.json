@@ -1,0 +1,30 @@
+{
+  "name": "mm-service-nodejs",
+  "version": "1.0.0",
+  "description": "MM Service layer",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/v8-suresh/mm-service-nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "auth0",
+    "social",
+    "learn"
+  ],
+  "author": "Suresh Sivanantham <suresh.sivanantham@gmail.com> (sivashub.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/v8-suresh/mm-service-nodejs/issues"
+  },
+  "homepage": "https://github.com/v8-suresh/mm-service-nodejs#readme"
+}
