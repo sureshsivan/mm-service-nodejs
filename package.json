@@ -19,7 +19,9 @@
     "express",
     "auth0",
     "social",
-    "learn"
+    "learn",
+    "swig",
+    "passport"
   ],
   "author": "Suresh Sivanantham <suresh.sivanantham@gmail.com> (sivashub.com)",
   "license": "ISC",
