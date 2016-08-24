@@ -1,18 +1,15 @@
-// Example model
-
 var mongoose = require('mongoose'),
   Schema = mongoose.Schema;
 
 var UserSchema = new Schema({
-  username: String,
-  url: String,
-  text: String
+  fname: String,
+  lname: String
 });
 
-ArticleSchema.virtual('date')
+UserSchema.virtual('date')
   .get(function(){
     return this._id.getTimestamp();
   });
 
-mongoose.model('Article', ArticleSchema);
+mongoose.model('User', UserSchema);
 
