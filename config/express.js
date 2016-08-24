@@ -9,6 +9,14 @@ var compress = require('compression');
 var methodOverride = require('method-override');
 var swig = require('swig');
 
+var jwt = require('express-jwt');
+var jwtCheck = jwt({
+  secret: new Buffer('SuHATR3uPsuN0fqSAtVP-PHGZV-idgkqsRp0z_VkYAy2QtvHCHb1lEojt7WHd4fB', 'base64'),
+  audience: 'RQwg1Wklr2d1fFwzGkmjX09FVocuI9cb'
+});
+
+
+
 module.exports = function(app, config) {
   var env = process.env.NODE_ENV || 'development';
   app.locals.ENV = env;
@@ -28,6 +36,9 @@ module.exports = function(app, config) {
   app.use(bodyParser.urlencoded({
     extended: true
   }));
+
+  // app.use('/mm/api/', jwtCheck);
+
   app.use(cookieParser());
   app.use(compress());
   app.use(express.static(config.root + '/public'));
