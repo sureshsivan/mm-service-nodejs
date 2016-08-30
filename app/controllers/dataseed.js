@@ -3,7 +3,7 @@ var express = require('express'),
     mongoose = require('mongoose');
 
 module.exports = function (app) {
-    app.use('/seed', userRouter);
+    app.use('/seed', dataSeedRouter);
 };
 
 dataSeedRouter.get('/', function (req, res, next) {
