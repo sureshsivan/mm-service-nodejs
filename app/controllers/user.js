@@ -16,13 +16,6 @@ module.exports = function (app) {
 // });
 
 
-userRouter.get('/', function (req, res, next) {
-    User.find(function (err, users) {
-        console.log(JSON.stringify(users));
-        if (err) return next(err);
-        res.render('index', {
-            title: 'Generator-Express MVC',
-            users: JSON.stringify(users)
-        });
-    });
+userRouter.get('/create', function (req, res, next) {
+    
 });
