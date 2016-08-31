@@ -2,7 +2,7 @@
   "name": "mm-service-nodejs",
   "version": "1.0.0",
   "description": "MM Service layer",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo test",
     "start": "node app.js"
